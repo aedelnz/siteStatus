@@ -1,4 +1,4 @@
-# siteStatus
+# SiteStatus
 
 ## 项目介绍
 
