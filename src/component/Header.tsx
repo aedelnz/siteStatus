@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Affix, Divider, PageHeader, Button, Space } from '@arco-design/web-react';
-import { IconMenuFold } from '@arco-design/web-react/icon';
+import { Affix, Divider, PageHeader, Button, Space, Menu, Dropdown } from '@arco-design/web-react';
+import { IconList } from '@arco-design/web-react/icon';
 import { Config } from '../../constants';
 
 
@@ -37,7 +37,7 @@ const Header = () => {
           <PageHeader
             title={Config.SiteName}
             subTitle={isLg ? Config.SubTitle : ''}
-            extra={isLg ? <Space>{Config.Navi.map((item) => (<Button type='text' key={item.url} href={item.url}>{item.name}</Button>))}</Space> : <Button  icon={<IconMenuFold />} />}
+            extra={isLg ? (<Space>{Config.Navi.map((item) => (<Button type='text' key={item.url} href={item.url}>{item.name}</Button>))}</Space>) : (<Dropdown position='br' droplist={<Menu>{Config.Navi.map((item) => (<Menu.Item key={item.url} onClick={() => window.open(item.url)}>{item.name}</Menu.Item>))}</Menu>}><Button icon={<IconList />} /></Dropdown>)}
           />
           <Divider style={{ margin: '0' }} />
         </div>

@@ -1,13 +1,11 @@
 
-import { Watermark, Layout, Divider, Typography, Link, BackTop, Button } from '@arco-design/web-react';
-import { IconDoubleUp } from '@arco-design/web-react/icon';
+import { Watermark, Layout } from '@arco-design/web-react';
 import Header from './component/Header.tsx'
 import UptimeRobot from './component/UptimeRobot.tsx'
+import Footer from './component/Footer.tsx'
 import { Config } from '../constants.ts';
 
 function App() {
-
-  const currentYear = new Date().getFullYear();
 
   return (
     <>
@@ -29,13 +27,7 @@ function App() {
           </Layout.Content>
 
           <Layout.Footer>
-            <Divider style={{ margin: '0' }} />
-            <div style={{ padding: '1.45rem', textAlign: 'center' }}>
-              <Typography.Paragraph bold>Copyright © 2020 - {currentYear}  <Link hoverable={false} href='https://jixiejidiguan.top'>画的个人记录</Link>. All Rights Reserved.</Typography.Paragraph>
-            </div>
-            <BackTop visibleHeight={600}>
-              <Button size='large' type='outline' icon={<IconDoubleUp />} />
-            </BackTop>
+            <Footer />
           </Layout.Footer>
 
         </Layout>
