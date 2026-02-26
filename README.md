@@ -6,16 +6,16 @@
 
 目前，有两个官方插件可用：
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) 使用 [Babel](https://babeljs.io/)（或在 [rolldown-vite](https://vite.dev/guide/rolldown) 中使用时使用 [oxc](https://oxc.rs)）进行快速刷新
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) 使用 [SWC](https://swc.rs/) 进行快速刷新
 
-## React Compiler
+## React 编译器
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+由于对开发和构建性能的影响，此模板未启用 React 编译器。要添加它，请参阅 [此文档](https://react.dev/learn/react-compiler/installation)。
 
-## Expanding the ESLint configuration
+## ESLint 配置
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+如果在开发生产应用程序，我们建议更新配置以启用类型感知的 lint 规则：
 
 ```js
 export default defineConfig([
@@ -45,7 +45,7 @@ export default defineConfig([
 ])
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+你还可以安装 [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) 和 [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) 来获取针对 React 的专用代码检查规则：
 
 ```js
 // eslint.config.js
