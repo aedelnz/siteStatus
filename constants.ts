@@ -34,6 +34,10 @@ export const Config: Config = {
       name: '导航站',
       url: 'https://jixiejidiguan.top/A2zml/',
     },
+    {
+      name: 'GitHub',
+      url: 'https://github.com/aedelnz/siteStatus',
+    }
   ],
 
 };
