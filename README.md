@@ -4,6 +4,10 @@
 
 一个基于 UptimeRobot API 的在线状态面板
 
+## 配置文件 > constants.ts
+
+配置文件 > constants.ts 是一个 TypeScript 文件，用于存储项目的配置信息。
+
 目前，有两个官方插件可用：
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) 使用 [Babel](https://babeljs.io/)（或在 [rolldown-vite](https://vite.dev/guide/rolldown) 中使用时使用 [oxc](https://oxc.rs)）进行快速刷新
