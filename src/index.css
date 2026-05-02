@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  color: var(--semi-color-text-0);
+  background-color: var(--semi-color-bg-0);
+}
+
+/* 顶部导航栏 */
+header.semi-layout-header {
+  background-color: var(--semi-color-bg-2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+/* 导航栏按钮边距 */
+header.semi-layout-header .semi-navigation-footer button {
+  margin-right: 4px;
+}
+
+/* 内容区域 */
+section.semi-layout.semi-layout-has-sider {
+  margin-top: 60px;
+}
+
+/* 展开关闭侧边栏内容区域 */
+.semi-sidesheet .semi-sidesheet-body {
+  padding: 0;
+}
+
+#button-sidesheet {
+  display: none;
+}
+
+/* 侧边导航栏底部边距 */
+.semi-navigation.semi-navigation-vertical {
+  padding-bottom: 16px;
+}
+
+/* 展开侧边栏 */
+aside.semi-layout-sider {
+  background-color: var(--semi-color-bg-2);
+  border-right: 1px solid var(--semi-color-border);
+  position: fixed;
+  overflow: auto;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+@media screen and (max-width: 768px) {
+  aside.semi-layout-sider {
+    display: none;
+  }
+
+  #button-sidesheet {
+    display: block;
+  }
+}
+
+/* main 内容区域 */
+main.semi-layout-content {
+  margin-left: 240px;
+}
+
+.contents {
+  padding: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  main.semi-layout-content {
+    margin-left: 0;
+  }
+
+  .contents {
+    padding: 8px;
+  }
+}
+
+/* 页脚 */
+footer.semi-layout-footer {
+  border-top: 1px solid var(--semi-color-border);
+  padding: 24px 0;
+}
+
+/* 页脚内容区域 */
+footer.semi-layout-footer>div {
+  padding: 0 16px;
+}
+
+/* ========= 上面通用模板 ========= */
+.tags-container {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1px;
+  align-items: center;
+}
+
+.tags {
+  height: 24px;
+  line-height: 24px;
+  margin: 0;
+  border-radius: 4px;
+  flex: 1;
+  min-width: max-content;
+  white-space: nowrap;
+  text-align: center;
+  box-sizing: border-box;
+}

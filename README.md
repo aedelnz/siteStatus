@@ -1,25 +1,19 @@
-# SiteStatus
+# React + TypeScript + Vite
 
-## 项目介绍
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-一个基于 UptimeRobot API 的在线状态面板
+Currently, two official plugins are available:
 
-## 配置文件 > constants.ts
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-配置文件 > constants.ts 是一个 TypeScript 文件，用于存储项目的配置信息。
+## React Compiler
 
-## 目前，有两个官方插件可用：
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) 使用 [Babel](https://babeljs.io/)（或在 [rolldown-vite](https://vite.dev/guide/rolldown) 中使用时使用 [oxc](https://oxc.rs)）进行快速刷新
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) 使用 [SWC](https://swc.rs/) 进行快速刷新
+## Expanding the ESLint configuration
 
-## React 编译器
-
-由于对开发和构建性能的影响，此模板未启用 React 编译器。要添加它，请参阅 [此文档](https://react.dev/learn/react-compiler/installation)。
-
-## ESLint 配置
-
-如果在开发生产应用程序，我们建议更新配置以启用类型感知的 lint 规则：
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
 ```js
 export default defineConfig([
@@ -49,7 +43,7 @@ export default defineConfig([
 ])
 ```
 
-你还可以安装 [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) 和 [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) 来获取针对 React 的专用代码检查规则：
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
 ```js
 // eslint.config.js
@@ -77,6 +71,3 @@ export default defineConfig([
   },
 ])
 ```
-# 致谢
-- [UptimeRobot API](https://uptimerobot.com/api/)
-- [uptime-status](https://github.com/yb/uptime-status)
