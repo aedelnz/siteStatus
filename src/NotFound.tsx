@@ -19,7 +19,7 @@ createRoot(document.getElementById('root')!).render(
         description="页面不存在">
         <div>
           <Button style={{ padding: '6px 24px', marginRight: 12 }} type="primary" onClick={() => window.location.href = '/'}>返回主页</Button>
-          <Button style={{ padding: '6px 24px' }} theme="solid" type="primary" onClick={() => window.location.href = '/A2zml/'}>爱莫能助</Button>
+          <Button style={{ padding: '6px 24px' }} theme="solid" type="primary" onClick={() => window.location.href = 'https://jixiejidiguan.top/A2zml/'}>爱莫能助</Button>
         </div>
       </Empty>
     </div>
