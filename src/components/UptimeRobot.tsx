@@ -50,17 +50,13 @@ function UptimeRobot({ apikey, onUpdate }: { apikey: string; onUpdate?: (monitor
     return monitors.map((monitor) => {
         const timelineItems = (monitor.daily || []).map((data) => {
             const uptime = parseFloat(data.uptime)
-            let status: 'ok' | 'down' | 'none' = 'none'
             let text = `${data.date.format('YYYY-MM-DD ')}`
 
             if (uptime >= 100) {
-                status = 'ok'
                 text += `可用率 ${data.uptime}%`
             } else if (uptime <= 0 && data.down.times === 0) {
-                status = 'none'
                 text += '无数据'
             } else {
-                status = 'down'
                 text += `故障 ${data.down.times} 次，累计 ${formatDuration(data.down.duration)}，可用率 ${data.uptime}%`
             }
 
